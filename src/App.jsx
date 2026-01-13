@@ -7,16 +7,18 @@ function App() {
   const currentData = cvProfiles.em;
 
   return (
-    <div className="min-h-screen bg-white md:grid md:grid-cols-[300px_1fr] lg:grid-cols-[400px_1fr]">
-      <Sidebar
-        data={currentData}
-      />
-      <main className="bg-white">
-        <MobileHeader
+    <div className="min-h-screen bg-slate-100 font-sans">
+      <div className="max-w-7xl mx-auto md:flex md:items-start md:justify-center md:gap-6 md:p-6 lg:p-8">
+        <Sidebar
           data={currentData}
         />
-        <Content data={currentData} />
-      </main>
+        <main className="flex-1 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden min-w-0">
+          <MobileHeader
+            data={currentData}
+          />
+          <Content data={currentData} />
+        </main>
+      </div>
     </div>
   );
 }

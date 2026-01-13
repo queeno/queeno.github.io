@@ -62,7 +62,7 @@ export const cvProfiles = {
         points: [
           { bold: "Technical Authority", text: "Serving as the Principal Technical Authority for a high-profile greenfield initiative within the Barclays Payments Incubator." },
           { bold: "IDP Architecture", text: "Architecting and engineering the division's new Internal Developer Platform (IDP) on AWS/EKS using Go, Terraform, Crossplane, and Flux." },
-          { bold: "embedded Transformation", text: "Leading technical transformation by operating as a \"Player-Coach\", upskilling internal Tech Leads on platform strategy and Cloud-Native best practices." }
+          { bold: "Embedded Transformation", text: "Leading technical transformation by operating as a \"Player-Coach\", upskilling internal Tech Leads on platform strategy and Cloud-Native best practices." }
         ]
       },
       {
