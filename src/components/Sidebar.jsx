@@ -25,7 +25,7 @@ export function Sidebar({ data }) {
         </div>
       </motion.div>
 
-      <h1 className="text-2xl lg:text-3xl font-bold mb-3 tracking-tight text-slate-900">{personalInfo.name}</h1>
+      <h1 className="text-3xl lg:text-4xl font-bold mb-3 tracking-tight text-slate-900">{personalInfo.name}</h1>
 
       <div className="space-y-2 mb-8">
         {personalInfo.roles.map((role, index) => (
