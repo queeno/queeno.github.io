@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { useState } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { Content } from './components/Content';
 import { MobileHeader } from './components/MobileHeader';
@@ -17,43 +16,25 @@ const allProfiles = {
   it: { em: em_it, ic: cvEn.ic }
 };
 
-function CVPage({ defaultLang }) {
-  const { lang: urlParamLang } = useParams();
-
-  const normalize = (l) => {
-    if (l === 'dk') return 'da';
-    if (['en', 'de', 'it', 'da'].includes(l)) return l;
-    return null;
-  };
-
-  // Initialize lang state. Prefer URL param if valid, else default.
-  // Note: We use a function to initialize only once, but here we want to react to URL changes too.
-  // Actually, initializing with a value derived from props/params is fine.
-  const [currentLang, setCurrentLang] = useState(() => {
-    return normalize(urlParamLang) || defaultLang || 'en';
-  });
-
-  // Sync state if URL changes (shortcut usage: user explicitly navigates to /de)
-  useEffect(() => {
-    const l = normalize(urlParamLang);
-    if (l) {
-      setCurrentLang(l);
-    } else if (!urlParamLang && defaultLang) {
-      // If root path '/', ensuring we are 'en' (or default)
-      setCurrentLang(defaultLang);
-    }
-  }, [urlParamLang, defaultLang]);
-
-  // Redirect invalid URLs to root
-  const validLangs = ['en', 'de', 'it', 'da', 'dk'];
-  if (urlParamLang && !validLangs.includes(urlParamLang)) {
-    return <Navigate to="/" replace />;
+const detectLocationLang = () => {
+  try {
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    console.log('Detected Timezone:', timeZone); // Debugging: Check your browser's timezone in the console
+    if (timeZone === 'Europe/Copenhagen') return 'da';
+    if (['Europe/Berlin', 'Europe/Vienna', 'Europe/Zurich', 'Europe/Vaduz', 'Europe/Busingen'].includes(timeZone)) return 'de';
+    if (['Europe/Rome', 'Europe/San_Marino', 'Europe/Vatican'].includes(timeZone)) return 'it';
+  } catch (e) {
+    // Ignore errors
   }
+  return 'en';
+};
+
+function App() {
+  const [currentLang, setCurrentLang] = useState(detectLocationLang());
 
   const currentData = allProfiles[currentLang]?.em || allProfiles['en'].em;
   const currentLabels = translations[currentLang] || translations['en'];
 
-  // Handle Dropdown Change: Update STATE only. Do NOT Redirect/Update URL.
   const handleLanguageChange = (code) => {
     setCurrentLang(code);
   };
@@ -83,17 +64,6 @@ function CVPage({ defaultLang }) {
         </main>
       </div>
     </div>
-  );
-}
-
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<CVPage defaultLang="en" />} />
-      <Route path="/:lang" element={<CVPage />} />
-      {/* Fallback for unknown routes */}
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
   );
 }
 
