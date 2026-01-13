@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Phone, Instagram } from 'lucide-react';
 
 export function MobileHeader({ data }) {
   const { personalInfo } = data;
@@ -46,6 +46,11 @@ export function MobileHeader({ data }) {
         <a href={`https://${personalInfo.linkedin.includes('http') ? '' : 'www.linkedin.com/in/'}${personalInfo.linkedin.replace('linkedin.com/in/', '')}`} target="_blank" rel="noopener noreferrer" className="p-2 bg-white border border-slate-200 rounded-full text-slate-700 hover:text-blue-600 hover:border-blue-500 transition-all shadow-sm">
           <Linkedin size={20} />
         </a>
+        {personalInfo.instagram && (
+          <a href={`https://instagram.com/${personalInfo.instagram}`} target="_blank" rel="noopener noreferrer" className="p-2 bg-white border border-slate-200 rounded-full text-slate-700 hover:text-blue-600 hover:border-blue-500 transition-all shadow-sm">
+            <Instagram size={20} />
+          </a>
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Phone, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function Sidebar({ data }) {
@@ -58,6 +58,11 @@ export function Sidebar({ data }) {
           <a href={`https://${personalInfo.linkedin.includes('http') ? '' : 'www.linkedin.com/in/'}${personalInfo.linkedin.replace('linkedin.com/in/', '')}`} target="_blank" rel="noopener noreferrer" className="p-3 bg-white border border-slate-200 rounded-full text-slate-600 hover:text-white hover:bg-[#0077b5] hover:border-[#0077b5] transition-all shadow-sm">
             <Linkedin size={20} />
           </a>
+          {personalInfo.instagram && (
+            <a href={`https://instagram.com/${personalInfo.instagram}`} target="_blank" rel="noopener noreferrer" className="p-3 bg-white border border-slate-200 rounded-full text-slate-600 hover:text-white hover:bg-[#E1306C] hover:border-[#E1306C] transition-all shadow-sm">
+              <Instagram size={20} />
+            </a>
+          )}
         </div>
       </div>
 

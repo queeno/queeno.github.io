@@ -28,10 +28,11 @@ export const cvProfiles = {
         "AI-Native Cloud Architect"
       ],
       location: "London, England, United Kingdom",
-      email: "simonaquino@gmail.com",
+      email: "hello@simonaquino.com",
       mobile: "+44 (0) 7514 902 489",
       github: "queeno",
       linkedin: "simonaquino",
+      instagram: "om.lidt",
       image: "/simon.png"
     },
     summary: `I am a hands-on Engineering Leader with 15+ years of experience building and scaling high-performance teams in data-intensive environments. Combining deep architectural expertise in Cloud-Native systems (GCP/AWS, Kubernetes) with a track record of growing engineering units from seed to enterprise scale, I specialise in transitioning teams from 'startup chaos' to maturity. Operating as a 'builder-leader,' I thrive on solving complex challenges—from regulatory compliance to distributed orchestration—to deliver speed without sacrificing security.`,
@@ -160,10 +161,11 @@ export const cvProfiles = {
         "AI-Native Cloud Architect"
       ],
       location: "London, England, United Kingdom",
-      email: "simonaquino@gmail.com",
+      email: "hello@simonaquino.com",
       mobile: "+44 (0) 7514 902 489",
       github: "queeno",
       linkedin: "simonaquino",
+      instagram: "om.lidt",
       image: "/simon.png"
     },
     summary: `Forward Deployed Engineer with 15+ years of experience bridging the gap between technical architecture and organisational strategy. I specialise in transitioning engineering units from "startup chaos" to enterprise-grade maturity, delivering speed without sacrificing security. Currently leading greenfield platform initiatives at Barclays, following a tenure at JPMorgan Chase where I scaled the Cloud Enablement unit from 3 to 50+ engineers. My focus is on building "Golden Path" platforms that reduce cognitive load for developers while ensuring rigorous compliance in highly regulated environments (FinTech/GovTech).`,
