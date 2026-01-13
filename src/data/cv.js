@@ -34,7 +34,7 @@ export const cvProfiles = {
       linkedin: "simonaquino",
       image: "/simon.png"
     },
-    summary: `Hands-on Engineering Leader with 15+ years of experience building and scaling high-performance teams in AI-driven and data-intensive environments. Combines deep architectural expertise in Cloud-Native systems (GCP/AWS, Kubernetes) and secure, event-driven architectures with a proven track record of growing engineering units from seed to enterprise scale. A "builder-leader" who thrives on solving complex technical challenges—from regulatory compliance to distributed orchestration—while fostering cultures of ownership and engineering excellence.`,
+    summary: `I am a hands-on Engineering Leader with 15+ years of experience building and scaling high-performance teams in data-intensive environments. Combining deep architectural expertise in Cloud-Native systems (GCP/AWS, Kubernetes) with a track record of growing engineering units from seed to enterprise scale, I specialise in transitioning teams from 'startup chaos' to maturity. Operating as a 'builder-leader,' I thrive on solving complex challenges—from regulatory compliance to distributed orchestration—to deliver speed without sacrificing security.`,
     technicalStrengths: [
       {
         title: "Organisational Growth",
