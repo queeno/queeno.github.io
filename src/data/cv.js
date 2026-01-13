@@ -17,6 +17,12 @@ const commonCertificates = [
   { issuer: "VMware", name: "Certified Professional 5 - Data Centre Virtualisation (VCP5-DV)", year: "2013" },
   { issuer: "Google", name: "Python Readability (Internal Code Quality Award)", year: "2011" }
 ];
+const commonLanguages = [
+  { language: "English", proficiency: "C2 - Native / Bilingual Proficiency" },
+  { language: "Italian", proficiency: "C2 - Native / Bilingual Proficiency" },
+  { language: "German", proficiency: "B2 - Professional Working Proficiency" },
+  { language: "Danish", proficiency: "A2 - Elementary Proficiency" }
+];
 
 export const cvProfiles = {
   em: {
@@ -150,7 +156,8 @@ export const cvProfiles = {
       ]
     },
     education: commonEducation,
-    certificates: commonCertificates
+    certificates: commonCertificates,
+    languages: commonLanguages
   },
   ic: {
     personalInfo: {
@@ -279,6 +286,7 @@ export const cvProfiles = {
       ]
     },
     education: commonEducation,
-    certificates: commonCertificates
+    certificates: commonCertificates,
+    languages: commonLanguages
   }
 };

@@ -1,5 +1,5 @@
 import { Section } from './Section';
-import { Briefcase, GraduationCap, Award, Cpu, Globe, ArrowUpRight } from 'lucide-react';
+import { Briefcase, GraduationCap, Award, Cpu, Globe, ArrowUpRight, Languages } from 'lucide-react';
 
 export function Content({ data }) {
   return (
@@ -92,8 +92,33 @@ export function Content({ data }) {
         </div>
       </Section>
 
+      {/* Languages Section */}
+      <Section title="Languages" delay={0.4}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {data.languages && data.languages.map((lang, idx) => {
+            const flags = {
+              English: '🇬🇧',
+              Italian: '🇮🇹',
+              German: '🇩🇪',
+              Danish: '🇩🇰'
+            };
+            return (
+              <div key={idx} className="flex items-center gap-3 p-4 bg-white rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-2xl shrink-0">
+                  {flags[lang.language] || '🌐'}
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900">{lang.language}</h4>
+                  <p className="text-sm text-slate-600">{lang.proficiency}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </Section>
+
       {/* Certificates Section */}
-      <Section title="Certificates & Awards" delay={0.4}>
+      <Section title="Certificates & Awards" delay={0.5}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {data.certificates.map((cert, idx) => (
             <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
