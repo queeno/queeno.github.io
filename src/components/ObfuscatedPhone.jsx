@@ -2,7 +2,8 @@ import React from 'react';
 
 export function ObfuscatedPhone({ phoneNumber, className = "" }) {
   // Reverse the string for the DOM
-  const reversed = phoneNumber.split('').reverse().join('');
+  const reversed = phoneNumber.split('').reverse().join('')
+    .replace(/\(/g, 'TEMP').replace(/\)/g, '(').replace(/TEMP/g, ')');
 
   return (
     <span
