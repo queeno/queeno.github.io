@@ -14,7 +14,7 @@ export const em_it = {
     instagram: "om.lidt",
     image: "/simon.png"
   },
-  summary: `Sono un Engineering Leader pratico con oltre 15 anni di esperienza nella creazione e scalabilità di team ad alte prestazioni in ambienti data-intensive. Combinando una profonda competenza architetturale in sistemi Cloud-Native (GCP/AWS, Kubernetes) con una comprovata esperienza nella crescita di unità ingegneristiche da seed a scala aziendale, sono specializzato nella transizione dei team dal 'caos da startup' alla maturità. Operando come 'builder-leader', prospero nel risolvere sfide complesse—dalla conformità normativa all'orchestrazione distribuita—per fornire velocità senza sacrificare la sicurezza.`,
+  summary: `Sono un Engineering Leader hands-on con oltre 15 anni di esperienza nella creazione e scalabilità di team ad alte prestazioni in ambienti data-intensive. Combinando una profonda competenza architetturale in sistemi Cloud-Native (GCP/AWS, Kubernetes) con una comprovata esperienza nella crescita di unità ingegneristiche da seed a scala aziendale, sono specializzato nella transizione dei team dal 'caos da startup' alla maturità. Operando come 'builder-leader', prospero nel risolvere sfide complesse—dalla conformità normativa all'orchestrazione distribuita—per fornire velocità senza sacrificare la sicurezza.`,
   technicalStrengths: [
     {
       title: "Crescita Organizzativa",
