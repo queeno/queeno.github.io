@@ -33,7 +33,7 @@ export const cvProfiles = {
         "Engineering Manager",
         "AI-Native Cloud Architect"
       ],
-      location: "London, England, United Kingdom",
+      location: "London, United Kingdom",
       email: "hello@simonaquino.com",
       mobile: "+44 (0) 7514 902 489",
       github: "queeno",
@@ -167,7 +167,7 @@ export const cvProfiles = {
         "Principal Platform Engineer",
         "AI-Native Cloud Architect"
       ],
-      location: "London, England, United Kingdom",
+      location: "London, United Kingdom",
       email: "hello@simonaquino.com",
       mobile: "+44 (0) 7514 902 489",
       github: "queeno",

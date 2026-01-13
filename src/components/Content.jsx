@@ -1,12 +1,22 @@
 import { Section } from './Section';
 import { Briefcase, GraduationCap, Award, Cpu, Globe, ArrowUpRight, Languages } from 'lucide-react';
 
-export function Content({ data }) {
+export function Content({ data, labels }) {
+  // Fallback labels to prevent crash if undefined
+  const l = labels || {
+    summary: 'Executive Profile',
+    experience: 'Professional Experience',
+    skills: 'Technical Skills',
+    education: 'Education',
+    certificates: 'Certificates & Awards',
+    languages: 'Languages'
+  };
+
   return (
     <div className="p-8 md:p-12 max-w-4xl mx-auto">
 
       {/* Summary Section */}
-      <Section title="Executive Profile">
+      <Section title={l.summary}>
         <p className="text-lg text-slate-600 leading-8 mb-6">
           {data.summary}
         </p>
@@ -24,7 +34,7 @@ export function Content({ data }) {
       </Section>
 
       {/* Experience Section */}
-      <Section title="Professional Experience" delay={0.1}>
+      <Section title={l.experience} delay={0.1}>
         <div className="space-y-10 relative border-l-2 border-slate-200 ml-3 pl-8 pb-4">
           {data.experience.map((job, idx) => (
             <div key={idx} className="relative">
@@ -54,7 +64,7 @@ export function Content({ data }) {
       </Section>
 
       {/* Skills Section */}
-      <Section title="Technical Skills" delay={0.2}>
+      <Section title={l.skills} delay={0.2}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {Object.entries(data.skills).map(([category, skills], idx) => (
             <div key={idx} className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
@@ -75,7 +85,7 @@ export function Content({ data }) {
       </Section>
 
       {/* Education Section */}
-      <Section title="Education" delay={0.3}>
+      <Section title={l.education} delay={0.3}>
         <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
           {data.education.map((edu, idx) => (
             <div key={idx} className="flex gap-4">
@@ -93,14 +103,14 @@ export function Content({ data }) {
       </Section>
 
       {/* Languages Section */}
-      <Section title="Languages" delay={0.4}>
+      <Section title={l.languages} delay={0.4}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {data.languages && data.languages.map((lang, idx) => {
             const flags = {
-              English: '🇬🇧',
-              Italian: '🇮🇹',
-              German: '🇩🇪',
-              Danish: '🇩🇰'
+              'English': '🇬🇧', 'Inglese': '🇬🇧', 'Englisch': '🇬🇧', 'Engelsk': '🇬🇧',
+              'Italian': '🇮🇹', 'Italiano': '🇮🇹', 'Italienisch': '🇮🇹', 'Italiensk': '🇮🇹',
+              'German': '🇩🇪', 'Tedesco': '🇩🇪', 'Deutsch': '🇩🇪', 'Tysk': '🇩🇪',
+              'Danish': '🇩🇰', 'Danese': '🇩🇰', 'Dänisch': '🇩🇰', 'Dansk': '🇩🇰'
             };
             return (
               <div key={idx} className="flex items-center gap-3 p-4 bg-white rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
@@ -118,7 +128,7 @@ export function Content({ data }) {
       </Section>
 
       {/* Certificates Section */}
-      <Section title="Certificates & Awards" delay={0.5}>
+      <Section title={l.certificates} delay={0.5}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {data.certificates.map((cert, idx) => (
             <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
