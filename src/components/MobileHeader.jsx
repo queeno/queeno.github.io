@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Instagram } from 'lucide-react';
+import { ObfuscatedPhone } from './ObfuscatedPhone';
 
 export function MobileHeader({ data }) {
   const { personalInfo } = data;
@@ -35,7 +36,7 @@ export function MobileHeader({ data }) {
         </div>
         <div className="flex items-center gap-2">
           <Phone size={14} />
-          <span>{personalInfo.mobile}</span>
+          <ObfuscatedPhone phoneNumber={personalInfo.mobile} />
         </div>
       </div>
 

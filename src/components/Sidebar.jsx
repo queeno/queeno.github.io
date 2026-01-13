@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { ObfuscatedPhone } from './ObfuscatedPhone';
 
 export function Sidebar({ data }) {
   const { personalInfo } = data;
@@ -48,7 +49,7 @@ export function Sidebar({ data }) {
 
         <div className="flex items-center gap-3 text-slate-600 hover:text-blue-600 transition-colors cursor-default">
           <Phone size={18} className="text-slate-400" />
-          <span className="text-sm">{personalInfo.mobile}</span>
+          <ObfuscatedPhone phoneNumber={personalInfo.mobile} className="text-sm" />
         </div>
 
         <div className="flex gap-4 mt-6">
