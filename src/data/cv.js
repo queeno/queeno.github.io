@@ -62,25 +62,15 @@ export const cvProfiles = {
         ]
       },
       {
-        title: "Principal Consultant",
-        company: "Haleon",
-        location: "London, UK",
-        period: "Apr. 2025 - Sep. 2025",
-        points: [
-          { bold: "SAP Migration Delivery", text: "Directed the delivery of a critical SAP ERP migration for Haleon, mobilising and managing a squad of specialist consultants." },
-          { bold: "Strategic Interface", text: "Acted as the primary interface between the consultancy team and Haleon's senior leadership." },
-          { bold: "Tech Stack", text: "SAP ERP, Azure DevOps, GitHub, Cloud Infrastructure, Migration Tooling." }
-        ]
-      },
-      {
         title: "Engineering Manager, Accelerator Platform",
-        company: "JPMorgan Chase",
+        company: "JPMorgan Chase / Core Engineering Consulting Group",
         location: "London, UK",
-        period: "Apr. 2023 - Apr. 2025",
+        period: "Apr. 2023 - Sep. 2025",
         points: [
-          { bold: "Scaling Teams", text: "Scaled the engineering unit from a seed team of 3 to 50+ engineers." },
-          { bold: "Firm-wide Architecture", text: "Architected the firm-wide GCP foundation and Kubernetes ecosystem (100+ clusters) with automated control frameworks aligned to NIST/ISO." },
-          { bold: "Platform Engineering", text: "Pioneered the adoption of Crossplane for Infrastructure-as-Code and introduced GitOps workflows (ArgoCD) to improve developer experience." }
+          { bold: "Scaling High-Performance Teams", text: "Scaled the Cloud Enablement unit from 3 to 50+ engineers, owning the full employee lifecycle (hiring, performance management, retention) to build a diverse, high-trust engineering culture focused on delivery excellence." },
+          { bold: "Enterprise-Scale Infrastructure", text: "Architected the firm-wide GCP foundation and Kubernetes ecosystem (100+ clusters), creating repeatable blueprints and automated control implementations (aligned to NIST) to enable the secure delivery of mission-critical, data-intensive workloads." },
+          { bold: "Strategic Alignment", text: "Partnered with C-suite executives to align technical roadmaps with business goals, translating architectural decisions into commercial value and managing a multi-million pound vendor budget." },
+          { bold: "Operational Excellence", text: "Championed a Platform-as-a-Product mindset, introducing Crossplane and GitOps to significantly improve Developer Experience (DevEx), system observability (Prometheus/Grafana), and platform reliability." }
         ]
       },
       {
@@ -200,25 +190,15 @@ export const cvProfiles = {
         ]
       },
       {
-        title: "Principal Consultant",
-        company: "Haleon",
+        title: "Engineering Manager, Platform Lead (Consultant)",
+        company: "JPMorgan Chase / Core Engineering Consulting Group",
         location: "London, UK",
-        period: "Apr. 2025 - Sep. 2025",
+        period: "Apr. 2023 - Sep. 2025",
         points: [
-          { bold: "SAP Migration Delivery", text: "Directed the delivery of a critical SAP ERP migration for Haleon, mobilising and managing a squad of specialist consultants." },
-          { bold: "Strategic Interface", text: "Acted as the primary interface between the consultancy team and Haleon's senior leadership." },
-          { bold: "Tech Stack", text: "SAP ERP, Azure DevOps, GitHub, Cloud Infrastructure, Migration Tooling." }
-        ]
-      },
-      {
-        title: "Engineering Manager, Accelerator Platform",
-        company: "JPMorgan Chase",
-        location: "London, UK",
-        period: "Apr. 2023 - Apr. 2025",
-        points: [
-          { bold: "Scaling Teams", text: "Scaled the engineering unit from a seed team of 3 to 50+ engineers." },
-          { bold: "Firm-wide Architecture", text: "Architected the firm-wide GCP foundation and Kubernetes ecosystem (100+ clusters) with automated control frameworks aligned to NIST/ISO." },
-          { bold: "Platform Engineering", text: "Pioneered the adoption of Crossplane for Infrastructure-as-Code and introduced GitOps workflows (ArgoCD) to improve developer experience." }
+          { bold: "Embedded Scaling & Enablement", text: "Embedded within the Cloud Enablement team to drive technical scaling from 3 to 50+ engineers. I paired daily with the workforce to establish a \"You Build It, You Run It\" culture, upskilling teams on SRE best practices and modern cloud-native tech." },
+          { bold: "Hyper-Scale Kubernetes Architecture", text: "Architected and engineered the firm-wide GCP foundation and Kubernetes ecosystem (100+ clusters). Delivered AI-ready blueprints integrating Vertex AI and data pipelines, enabling secure transition to data-intensive GenAI workloads." },
+          { bold: "Golden Path Engineering", text: "Engineered a \"Golden Path\" strategy that abstracted infrastructure complexity using Crossplane and GitOps. Drastically reduced cognitive load and improved DevEx and system observability (Prometheus/Grafana) for thousands of internal developers." },
+          { bold: "Strategic Technical Execution", text: "Acted as a bridge between business goals and engineering execution. Translated high-level objectives into executable technical roadmaps and managed the hands-on delivery of complex distributed systems." }
         ]
       },
       {
