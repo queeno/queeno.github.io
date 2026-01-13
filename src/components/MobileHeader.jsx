@@ -5,7 +5,7 @@ export function MobileHeader({ data }) {
   const { personalInfo } = data;
 
   return (
-    <div className="md:hidden bg-gradient-to-t from-blue-950 to-slate-700 border-b border-slate-600 p-8 text-center text-white">
+    <div className="md:hidden bg-gradient-to-b from-blue-950 to-slate-700 border-b border-slate-600 p-8 text-center text-white">
 
       <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white/20 shadow-md ring-1 ring-white/30">
         <img

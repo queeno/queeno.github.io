@@ -10,7 +10,7 @@ export function Sidebar({ data }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="hidden md:flex flex-col items-center text-center bg-gradient-to-t from-blue-950 to-slate-700 text-white rounded-2xl shadow-xl shadow-slate-200 border border-slate-300 p-8 md:w-[320px] lg:w-[350px] shrink-0 md:sticky md:top-24 md:max-h-[calc(100vh-12rem)] overflow-y-auto custom-scrollbar"
+      className="hidden md:flex flex-col items-center text-center bg-gradient-to-b from-blue-950 to-slate-700 text-white rounded-2xl shadow-xl shadow-slate-200 border border-slate-300 p-8 md:w-[320px] lg:w-[350px] shrink-0 md:sticky md:top-24 md:max-h-[calc(100vh-12rem)] overflow-y-auto custom-scrollbar"
     >
 
       <motion.div
