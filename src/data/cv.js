@@ -34,19 +34,23 @@ export const cvProfiles = {
       linkedin: "simonaquino",
       image: "/simon.png"
     },
-    summary: `Hands-on "Builder-Leader" and Forward Deployed Engineer with 15+ years of experience bridging the gap between technical architecture and organisational strategy. I specialise in transitioning engineering units from "startup chaos" to enterprise-grade maturity, delivering speed without sacrificing security. Currently leading greenfield platform initiatives at Barclays, following a tenure at JPMorgan Chase where I scaled the Cloud Enablement unit from 3 to 50+ engineers. My focus is on building "Golden Path" platforms that reduce cognitive load for developers while ensuring rigorous compliance in highly regulated environments (FinTech/GovTech).`,
+    summary: `Hands-on Engineering Leader with 15+ years of experience building and scaling high-performance teams in AI-driven and data-intensive environments. Combines deep architectural expertise in Cloud-Native systems (GCP/AWS, Kubernetes) and secure, event-driven architectures with a proven track record of growing engineering units from seed to enterprise scale. A "builder-leader" who thrives on solving complex technical challenges—from regulatory compliance to distributed orchestration—while fostering cultures of ownership and engineering excellence.`,
     technicalStrengths: [
       {
-        title: "Organisational Growth & Scale",
-        description: "I operate as a \"Player-Coach\" who builds high-performance cultures. I have a proven track record of growing distributed engineering units from scratch to 50+ headcount by embedding with the workforce."
+        title: "Organisational Growth",
+        description: "Extensive experience defining hiring strategies and scaling engineering organisations (from 3 to 50+), managing the full employee lifecycle to build high-trust, autonomous teams."
       },
       {
-        title: "Strategic Governance & Delivery",
-        description: "I architect rigorous automated security control implementations with delivery excellence. I combine technical execution with commercial acumen, managing vendor budgets and partnering with C-suite stakeholders."
+        title: "Technical Strategy",
+        description: "Expert in bridging the gap between business goals and technical execution, designing scalable, event-driven architectures (Kubernetes, Go) and \"Golden Path\" platforms that transform Developer Experience (DevEx) and product velocity."
       },
       {
-        title: "Technical Authority (Hands-On)",
-        description: "I lead from the front with deep expertise in Cloud-Native systems. I remain hands-on with the stack (Kubernetes, Go, Python) to steer complex decisions and champion AI-native workflows (Vertex AI, Cursor, Antigravity)."
+        title: "Operational Excellence",
+        description: "Dedicated to raising the bar on engineering standards, embedding security/compliance (GDPR, ISO, SOX, NIST), and driving continuous improvement in CI/CD, observability, and system resilience."
+      },
+      {
+        title: "Stakeholder Management",
+        description: "Skilled in navigating complex multi-stakeholder environments, translating architectural needs into commercial value, and managing multi-million pound budgets to align technical roadmaps with company strategy."
       }
     ],
     experience: [
