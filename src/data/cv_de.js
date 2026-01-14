@@ -106,7 +106,7 @@ export const em_de = {
       points: [
         { bold: "Deloitte UK (2018-2019)", text: "Lead DevOps Engineer für die digitale Transformation der dänischen Steuerbehörde." },
         { bold: "Element (2017-2018)", text: "Founding DevOps Engineer für InsureTech-Startup." },
-        { bold: "HMRC (2016-2017)", text: "Senior DevOps Consultant für Multi-Active-Plattform (AWS/Azure)." },
+        { bold: "HMRC (2016-2017)", text: "Senior DevOps Consultant für Multi-Active-Plattform (AWS/On-Prem)." },
         { bold: "KPMG UK (2015-2016)", text: "Architektur einer Multi-Tenant AWS-Foundation für Big Data." },
         { bold: "WTG (2015)", text: "Bereitstellung einer sicheren automatisierten Überwachungsinfrastruktur für das UK Home Office." },
         { bold: "Gov.UK (2014-2015)", text: "WebOps Engineer für Gov.UK Verify Identitäts-Gateway." },

@@ -263,7 +263,7 @@ export const cvProfiles = {
         points: [
           { bold: "Deloitte UK (2018-2019)", text: "Lead DevOps Engineer for Danish Tax Authority digital transformation. Reduced environment deployment from weeks to hours." },
           { bold: "Element (2017-2018)", text: "Founding DevOps Engineer for InsureTech startup. Built greenfield AWS/Kubernetes foundation." },
-          { bold: "HMRC (2016-2017)", text: "Senior DevOps Consultant engineering multi-active platform (AWS/Azure) for zero-downtime availability." },
+          { bold: "HMRC (2016-2017)", text: "Senior DevOps Consultant engineering multi-active platform (AWS/On-Prem) for zero-downtime availability." },
           { bold: "KPMG UK (2015-2016)", text: "Architected multi-tenant AWS foundation for Big Data (Hadoop) processing." },
           { bold: "WTG (2015)", text: "Delivered secure automated monitoring infrastructure for UK Home Office ahead of schedule." },
           { bold: "Gov.UK (2014-2015)", text: "WebOps Engineer for Gov.UK Verify digital identity gateway." },
