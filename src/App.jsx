@@ -3,17 +3,17 @@ import { Sidebar } from './components/Sidebar';
 import { Content } from './components/Content';
 import { MobileHeader } from './components/MobileHeader';
 import { LanguageSwitcher } from './components/LanguageSwitcher';
-import { cvProfiles as cvEn } from './data/cv';
-import { em_de } from './data/cv_de';
-import { em_da } from './data/cv_da';
-import { em_it } from './data/cv_it';
+import { cv_en } from './data/cv';
+import { cv_de } from './data/cv_de';
+import { cv_da } from './data/cv_da';
+import { cv_it } from './data/cv_it';
 import { translations } from './data/locales';
 
 const allProfiles = {
-  en: cvEn,
-  de: { em: em_de, ic: cvEn.ic },
-  da: { em: em_da, ic: cvEn.ic },
-  it: { em: em_it, ic: cvEn.ic }
+  en: cv_en,
+  de: cv_de,
+  da: cv_da,
+  it: cv_it
 };
 
 const detectLocationLang = () => {
@@ -32,7 +32,7 @@ const detectLocationLang = () => {
 function App() {
   const [currentLang, setCurrentLang] = useState(detectLocationLang());
 
-  const currentData = allProfiles[currentLang]?.em || allProfiles['en'].em;
+  const currentData = allProfiles[currentLang] || allProfiles['en'];
   const currentLabels = translations[currentLang] || translations['en'];
 
   const handleLanguageChange = (code) => {

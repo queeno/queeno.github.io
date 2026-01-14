@@ -1,4 +1,4 @@
-export const em_da = {
+export const cv_da = {
   personalInfo: {
     name: "Simon Aquino",
     roles: [
