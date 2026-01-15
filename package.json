@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "images:webp": "ffmpeg -i public/simon.png -c:v libwebp -quality 80 public/simon.webp -y",
+    "images:avif": "ffmpeg -i public/simon.png -c:v libaom-av1 -crf 30 -b:v 0 public/simon.avif -y",
+    "images": "npm run images:webp && npm run images:avif"
   },
   "dependencies": {
     "framer-motion": "^12.26.1",
