@@ -8,11 +8,15 @@ export function MobileHeader({ data }) {
     <div className="md:hidden bg-gradient-to-b from-blue-950 to-slate-700 border-b border-slate-600 p-8 text-center text-white">
 
       <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white/20 shadow-md ring-1 ring-white/30">
-        <img
-          src={personalInfo.image}
-          alt={personalInfo.name}
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source srcSet={personalInfo.image.replace('.png', '.avif')} type="image/avif" />
+          <source srcSet={personalInfo.image.replace('.png', '.webp')} type="image/webp" />
+          <img
+            src={personalInfo.image}
+            alt={personalInfo.name}
+            className="w-full h-full object-cover"
+          />
+        </picture>
       </div>
 
       <h1 className="text-3xl font-bold text-white mb-2">{personalInfo.name}</h1>

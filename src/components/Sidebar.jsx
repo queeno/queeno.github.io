@@ -18,11 +18,15 @@ export function Sidebar({ data }) {
         whileHover={{ scale: 1.05 }}
       >
         <div className="w-44 h-44 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6 ring-1 ring-white/30">
-          <img
-            src={personalInfo.image}
-            alt={personalInfo.name}
-            className="w-full h-full object-cover"
-          />
+          <picture>
+            <source srcSet={personalInfo.image.replace('.png', '.avif')} type="image/avif" />
+            <source srcSet={personalInfo.image.replace('.png', '.webp')} type="image/webp" />
+            <img
+              src={personalInfo.image}
+              alt={personalInfo.name}
+              className="w-full h-full object-cover"
+            />
+          </picture>
         </div>
       </motion.div>
 
