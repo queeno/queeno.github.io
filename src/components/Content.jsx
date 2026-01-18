@@ -17,7 +17,7 @@ export function Content({ data, labels }) {
 
       {/* Summary Section */}
       <Section title={l.summary}>
-        <p className="text-lg text-slate-600 leading-8 mb-6">
+        <p className="text-lg text-slate-600 leading-8 mb-6 text-justify">
           {data.summary}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50 p-6 rounded-xl border border-slate-100">
@@ -27,7 +27,7 @@ export function Content({ data, labels }) {
                 <ArrowUpRight size={16} className="text-blue-500" />
                 {strength.title}
               </h3>
-              <p className="text-sm text-slate-600">{strength.description}</p>
+              <p className="text-sm text-slate-600 text-justify">{strength.description}</p>
             </div>
           ))}
         </div>
@@ -53,7 +53,7 @@ export function Content({ data, labels }) {
 
               <ul className="space-y-3">
                 {job.points.map((point, k) => (
-                  <li key={k} className="text-slate-700 text-sm md:text-base pl-2">
+                  <li key={k} className="text-slate-700 text-sm md:text-base pl-2 text-justify">
                     <span className="font-semibold text-slate-900">{point.bold}:</span> {point.text}
                   </li>
                 ))}
