@@ -1,21 +1,16 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Instagram } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { ObfuscatedPhone } from './ObfuscatedPhone';
 
 export function Sidebar({ data }) {
   const { personalInfo } = data;
 
   return (
-    <motion.aside
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="hidden md:flex flex-col items-center text-center bg-gradient-to-b from-blue-950 to-slate-700 text-white rounded-2xl shadow-xl shadow-slate-200 border border-slate-300 p-8 md:w-[320px] lg:w-[350px] shrink-0 md:sticky md:top-24 md:max-h-[calc(100vh-12rem)] overflow-y-auto custom-scrollbar"
+    <aside
+      className="hidden md:flex flex-col items-center text-center bg-gradient-to-b from-blue-950 to-slate-700 text-white rounded-2xl shadow-xl shadow-slate-200 border border-slate-300 p-8 md:w-[320px] lg:w-[350px] shrink-0 md:sticky md:top-24 md:max-h-[calc(100vh-12rem)] overflow-y-auto custom-scrollbar animate-fade-in"
     >
 
-      <motion.div
-        className="mb-8 relative group"
-        whileHover={{ scale: 1.05 }}
+      <div
+        className="mb-8 relative group transition-transform duration-300 hover:scale-105"
       >
         <div className="w-44 h-44 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6 ring-1 ring-white/30">
           <picture>
@@ -28,7 +23,7 @@ export function Sidebar({ data }) {
             />
           </picture>
         </div>
-      </motion.div>
+      </div>
 
       <h1 className="text-3xl lg:text-4xl font-bold mb-3 tracking-tight text-white">{personalInfo.name}</h1>
 
@@ -74,6 +69,6 @@ export function Sidebar({ data }) {
       <div className="mt-auto pt-8 text-xs text-slate-400 hidden md:block">
         © {new Date().getFullYear()} Simon Aquino
       </div>
-    </motion.aside>
+    </aside>
   );
 }
