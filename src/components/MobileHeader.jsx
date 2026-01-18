@@ -15,6 +15,8 @@ export function MobileHeader({ data }) {
             src={personalInfo.image}
             alt={personalInfo.name}
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
           />
         </picture>
       </div>
