@@ -12,7 +12,7 @@ export const cv_da = {
     github: "queeno",
     linkedin: "simonaquino",
     instagram: "om.lidt",
-    image: "/simon.png"
+    image: "/simon.webp"
   },
   summary: `Jeg er en hands-on Engineering Leader med 15+ års erfaring i at opbygge og skalere højtydende teams i datatunge miljøer. Ved at kombinere dyb arkitektonisk ekspertise inden for Cloud-Native systemer (GCP/AWS, Kubernetes) med en dokumenteret evne til at vækste tekniske enheder fra start til virksomhedsskala, specialiserer jeg mig i at transformere teams fra 'startup-kaos' til modenhed. Som 'builder-leader' trives jeg med at løse komplekse udfordringer – fra compliance til distribueret orkestrering – for at levere hastighed uden at gå på kompromis med sikkerheden.`,
   technicalStrengths: [

@@ -8,8 +8,8 @@
     "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
-    "images:webp": "ffmpeg -i public/simon.png -c:v libwebp -quality 80 public/simon.webp -y",
-    "images:avif": "ffmpeg -i public/simon.png -c:v libaom-av1 -crf 30 -b:v 0 public/simon.avif -y",
+    "images:webp": "ffmpeg -i assets_src/simon.png -c:v libwebp -quality 80 public/simon.webp -y",
+    "images:avif": "ffmpeg -i assets_src/simon.png -c:v libaom-av1 -crf 30 -b:v 0 public/simon.avif -y",
     "images": "npm run images:webp && npm run images:avif"
   },
   "dependencies": {
@@ -31,7 +31,8 @@
     "globals": "^16.5.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
-    "vite": "npm:rolldown-vite@7.2.5"
+    "vite": "npm:rolldown-vite@7.2.5",
+    "vite-plugin-sitemap": "^0.8.2"
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"

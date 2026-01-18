@@ -12,7 +12,7 @@ export const cv_de = {
     github: "queeno",
     linkedin: "simonaquino",
     instagram: "om.lidt",
-    image: "/simon.png"
+    image: "/simon.webp"
   },
   summary: `Ich bin eine pragmatische Engineering-Führungskraft mit über 15 Jahren Erfahrung im Aufbau und der Skalierung leistungsstarker Teams in datenintensiven Umgebungen. Durch die Kombination von tiefem architektonischem Fachwissen in Cloud-Native-Systemen (GCP/AWS, Kubernetes) mit einer Erfolgsbilanz im Wachstum von Engineering-Einheiten vom Start-up bis zur Unternehmensgröße, bin ich darauf spezialisiert, Teams vom 'Start-up-Chaos' zur Reife zu führen. Ich arbeite als 'Builder-Leader' und löse gerne komplexe Herausforderungen – von der Einhaltung gesetzlicher Vorschriften bis hin zur verteilten Orchestrierung – um Geschwindigkeit ohne Sicherheitseinbußen zu liefern.`,
   technicalStrengths: [
