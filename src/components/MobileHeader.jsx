@@ -9,8 +9,8 @@ export function MobileHeader({ data }) {
 
       <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white/20 shadow-md ring-1 ring-white/30">
         <picture>
-          <source srcSet={personalInfo.image.replace('.png', '.avif')} type="image/avif" />
-          <source srcSet={personalInfo.image.replace('.png', '.webp')} type="image/webp" />
+          <source srcSet={personalInfo.image.replace(/\.(png|webp|jpg)$/, '.avif')} type="image/avif" />
+          <source srcSet={personalInfo.image.replace(/\.(png|avif|jpg)$/, '.webp')} type="image/webp" />
           <img
             src={personalInfo.image}
             alt={personalInfo.name}

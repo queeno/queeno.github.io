@@ -48,7 +48,22 @@
   </script>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- FCP Skeleton for Mobile (Matches MobileHeader.jsx) -->
+    <div
+      style="background: linear-gradient(to bottom, #172554, #334155); padding: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; height: 100vh; color: white;">
+      <div
+        style="width: 8rem; height: 8rem; border-radius: 9999px; background: rgba(255,255,255,0.1); margin-bottom: 1rem; border: 4px solid rgba(255,255,255,0.2);">
+      </div>
+      <div
+        style="height: 2rem; width: 12rem; background: rgba(255,255,255,0.1); border-radius: 0.25rem; margin-bottom: 0.75rem;">
+      </div>
+      <div style="display: flex; gap: 0.5rem; justify-content: center;">
+        <div style="height: 1.5rem; width: 6rem; background: rgba(255,255,255,0.1); border-radius: 9999px;"></div>
+        <div style="height: 1.5rem; width: 6rem; background: rgba(255,255,255,0.1); border-radius: 9999px;"></div>
+      </div>
+    </div>
+  </div>
   <script type="module" src="/src/main.jsx"></script>
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
     data-cf-beacon='{"token": "5363a86c4f42447eadeaf23421a18f77"}'>
