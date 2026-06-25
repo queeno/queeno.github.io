@@ -2,9 +2,9 @@ export const cv_it = {
   personalInfo: {
     name: "Simon Aquino",
     roles: [
-      "Principal Platform Lead",
-      "Engineering Manager",
-      "Architetto Cloud AI-Native"
+      "Engineering Leader",
+      "Architetto di Piattaforme Cloud-Native",
+      "Forward Deployed Engineer"
     ],
     location: "Londra, Regno Unito",
     email: "hello@simonaquino.com",
@@ -14,47 +14,69 @@ export const cv_it = {
     instagram: "om.lidt",
     image: "/simon.webp"
   },
-  summary: `Sono un Engineering Leader hands-on con oltre 15 anni di esperienza nella creazione e scalabilità di team ad alte prestazioni in ambienti data-intensive. Combinando una profonda competenza architetturale in sistemi Cloud-Native (GCP/AWS, Kubernetes) con una comprovata esperienza nella crescita di unità ingegneristiche da seed a scala aziendale, sono specializzato nella transizione dei team dal 'caos da startup' alla maturità. Operando come 'builder-leader', prospero nel risolvere sfide complesse—dalla conformità normativa all'orchestrazione distribuita—per fornire velocità senza sacrificare la sicurezza.`,
+  summary: `Sono un engineering leader con oltre 16 anni di esperienza tra servizi finanziari, settore pubblico e tecnologia ad alta crescita. Costruisco e guido team di ingegneri, sono responsabile della delivery rispetto a scadenze regolamentate e resto abbastanza vicino alla tecnologia da guidare gli ingegneri con autorevolezza e prendere solide decisioni architetturali. Lavoro esattamente nel punto in cui leadership delle persone, responsabilità di delivery e profonda competenza tecnica si incontrano — a mio agio sia nel guidare un team e il suo budget, sia nel risolvere io stesso il problema difficile nel codice. Attualmente costruisco e guido una piattaforma dati greenfield regolamentata, sostenuto da una profonda esperienza cloud-native su GCP, AWS e Azure (Kubernetes, Internal Developer Platforms, IaC) e da una delivery sicura e orientata alla conformità.`,
   technicalStrengths: [
     {
-      title: "Crescita Organizzativa",
-      description: "Vasta esperienza nella definizione di strategie di assunzione e scalabilità di organizzazioni ingegneristiche (da 3 a 50+), gestendo l'intero ciclo di vita dei dipendenti per costruire team autonomi e di alta fiducia."
+      title: "Leadership di Team & Organizzazione",
+      description: "Costruisce e guida team di ingegneri lungo l'intero ciclo di vita – assunzione, onboarding, performance, coaching 1:1 e sviluppo di carriera – e ha vinto il business case organizzativo per ristrutturare un team in ottica di scalabilità, con la nuova struttura adottata in modo permanente."
     },
     {
-      title: "Strategia Tecnica",
-      description: "Esperto nel colmare il divario tra obiettivi aziendali ed esecuzione tecnica, progettando architetture scalabili ed event-driven (Kubernetes, Go) e piattaforme \"Golden Path\" che trasformano la Developer Experience (DevEx) e la velocità del prodotto."
+      title: "Delivery & Responsabilità",
+      description: "Possiede budget, scope e delivery di programmi greenfield regolamentati, rispondendo a stakeholder clienti ed executive per i risultati rispetto a scadenze di audit e normative."
     },
     {
-      title: "Eccellenza Operativa",
-      description: "Dedicato ad alzare l'asticella degli standard ingegneristici, integrando sicurezza/conformità (GDPR, ISO, SOX, NIST) e guidando il miglioramento continuo in CI/CD, osservabilità e resilienza del sistema."
+      title: "Piattaforma & Profondità Tecnica",
+      description: "Hands-on su GCP, AWS e Azure (Kubernetes, Internal Developer Platforms, IaC, Go/Python), con la credibilità per prendere e difendere decisioni architetturali e di build/buy."
     },
     {
-      title: "Gestione degli Stakeholder",
-      description: "Abile nel navigare in ambienti complessi multi-stakeholder, traducendo le esigenze architetturali in valore commerciale e gestendo budget multimilionari per allineare le roadmap tecniche con la strategia aziendale."
+      title: "Stakeholder & Strategia",
+      description: "Traduce tra obiettivi commerciali ed esecuzione tecnica, fornendo consulenza a stakeholder senior e C-suite per definire roadmap e trasformare la direzione tecnica in risultati di business."
     }
   ],
   experience: [
     {
-      title: "Principal Platform Consultant",
-      company: "Barclays",
+      title: "Engineering Manager, Data Engineering",
+      company: "Haleon / Core Engineering Consulting Group",
       location: "Londra, UK",
-      period: "Ott. 2025 - Presente",
+      period: "Mar. 2026 - Presente",
       points: [
-        { bold: "Autorità Tecnica", text: "Servire come Autorità Tecnica Principale per un'iniziativa greenfield di alto profilo all'interno dell'Incubatore Barclays Payments." },
-        { bold: "Architettura IDP", text: "Progettazione e ingegnerizzazione della nuova Internal Developer Platform (IDP) della divisione su AWS/EKS utilizzando Go, Terraform, Crossplane e Flux." },
-        { bold: "Trasformazione Integrata", text: "Guidare la trasformazione tecnica operando come \"Player-Coach\", aggiornando i Tech Lead interni sulla strategia della piattaforma e le migliori pratiche Cloud-Native." }
+        { bold: "Costruzione del Team & Leadership", text: "Ho fondato e guido un team di 6 ingegneri da zero – con responsabilità su assunzione, onboarding, performance, coaching 1:1 e sviluppo di carriera – costruendo una cultura ad alta fiducia." },
+        { bold: "Responsabilità di Budget & Delivery", text: "Possiedo l'ingaggio end-to-end (budget, scope e roadmap), guidando una strategia di rilascio iterativa che consegna pipeline production-grade rispetto a scadenze di audit SOX e normative." },
+        { bold: "Architettura Tecnica", text: "Ho progettato una piattaforma dati Medallion (Bronze/Argento/Oro) su Azure (AKS, ADLS Gen2, PostgreSQL) con pipeline Dagster/Python, distribuita come codice tramite Terraform Cloud, Helm e GitHub Actions." },
+        { bold: "Conformità & Delivery Assistita da AI", text: "Ho costruito controlli SOX automatizzati (PA-02/AM-02) con tracciabilità verificabile dal report alla sorgente grezza e introdotto sviluppo e code review assistiti da AI per aumentare il throughput del team." }
       ]
     },
     {
-      title: "Engineering Manager, Accelerator Platform",
+      title: "Principal Platform Consultant",
+      company: "Barclays / Red Badger",
+      location: "Londra, UK",
+      period: "Ott. 2025 - Mar. 2026",
+      points: [
+        { bold: "Architettura IDP Greenfield", text: "Ho progettato e realizzato la nuova Internal Developer Platform della divisione Payments su AWS/EKS (Go, Terraform, Crossplane, Flux), costruita per payment rails ad alto throughput e bassa latenza." },
+        { bold: "Golden Path & Governance", text: "Ho agito come Technical Authority, progettando pattern \"Golden Path\" e framework di conformità automatizzati che hanno trasformato i vincoli legacy in un ecosistema sicuro e self-service." },
+        { bold: "Abilitazione del Team", text: "Ho trasformato unità software legacy in Platform Engineer attraverso pair programming hands-on e mentoring, aggiornando i Tech Lead interni sulle best practice Cloud-Native." }
+      ]
+    },
+    {
+      title: "Principal Consultant, GitHub Migration",
+      company: "Haleon / Core Engineering Consulting Group",
+      location: "Londra, UK",
+      period: "Apr. 2025 - Set. 2025",
+      points: [
+        { bold: "Delivery della Migrazione", text: "Ho guidato la delivery tecnica di una migrazione enterprise di controllo del codice sorgente e CI/CD, spostando il team della piattaforma SAP ERP da Azure DevOps a GitHub con disruzione minima." },
+        { bold: "Interfaccia con gli Stakeholder", text: "Ho coordinato la delivery e agito come interfaccia verso gli stakeholder di Haleon, a seguito di una gara competitiva vinta da CECG." }
+      ]
+    },
+    {
+      title: "Engineering Manager, Cloud Enablement",
       company: "JPMorgan Chase / Core Engineering Consulting Group",
       location: "Londra, UK",
-      period: "Apr. 2023 - Set. 2025",
+      period: "Apr. 2023 - Mar. 2025",
       points: [
-        { bold: "Scalabilità di Team ad Alte Prestazioni", text: "Scalato l'unità Cloud Enablement da 3 a 50+ ingegneri, gestendo l'intero ciclo di vita dei dipendenti (assunzione, gestione delle prestazioni, fidelizzazione) per costruire una cultura ingegneristica diversificata e di alta fiducia focalizzata sull'eccellenza della consegna." },
-        { bold: "Infrastruttura su Scala Aziendale", text: "Architettato la fondazione GCP a livello aziendale e l'ecosistema Kubernetes (100+ cluster), creando blueprint ripetibili e implementazioni di controlli automatizzati (allineati al NIST) per consentire la consegna sicura di carichi di lavoro mission-critical e data-intensive." },
-        { bold: "Allineamento Strategico", text: "Collaborato con dirigenti C-suite per allineare le roadmap tecniche con gli obiettivi aziendali, traducendo le decisioni architetturali in valore commerciale e gestendo un budget fornitori multimilionario." },
-        { bold: "Eccellenza Operativa", text: "Promosso una mentalità Platform-as-a-Product, introducendo Crossplane e GitOps per migliorare significativamente la Developer Experience (DevEx), l'osservabilità del sistema (Prometheus/Grafana) e l'affidabilità della piattaforma." }
+        { bold: "Leadership & Crescita del Team", text: "Ho gestito (line management) e fatto crescere il team Cloud Enablement fino a 13 ingegneri in due anni, con responsabilità su assunzione, onboarding, performance, coaching 1:1 e sviluppo di carriera." },
+        { bold: "Progettazione Organizzativa", text: "Ho costruito e vinto il business case con l'Engineering Director per ristrutturare il team in ottica di scalabilità, con la nuova struttura adottata in modo permanente nell'organigramma dell'azienda." },
+        { bold: "Architettura su Scala Aziendale", text: "Come lead tecnico più senior, ho definito la direzione per la fondazione GCP a livello aziendale e l'ecosistema Kubernetes (100+ cluster) con framework di controllo allineati a NIST/ISO." },
+        { bold: "Golden Path & DevEx", text: "Ho introdotto Crossplane e GitOps (ArgoCD) con osservabilità (Prometheus/Grafana), migliorando affidabilità e Developer Experience per migliaia di sviluppatori interni." }
       ]
     },
     {
@@ -63,9 +85,9 @@ export const cv_it = {
       location: "Copenaghen, Danimarca",
       period: "Mar. 2021 - Mar. 2023",
       points: [
-        { bold: "Infrastruttura Critica", text: "Orchestrato l'infrastruttura cloud per la Piattaforma Nazionale delle Imposte Immobiliari della Danimarca (Vurderingsportalen)." },
-        { bold: "Ottimizzazione dei Costi", text: "Eseguito una strategia di consolidamento dell'infrastruttura che ha ridotto i costi operativi cloud mensili di ~70%." },
-        { bold: "Modernizzazione della Sicurezza", text: "Ri-architettato il livello di autenticazione, sostituendo soluzioni NGINX personalizzate con AWS API Gateway gestito." }
+        { bold: "Infrastruttura Critica", text: "Ho orchestrato l'infrastruttura cloud per la Piattaforma Nazionale delle Imposte Immobiliari della Danimarca (Vurderingsportalen), coordinando 3 team satellite per favorire l'autonomia di delivery." },
+        { bold: "Ottimizzazione dei Costi", text: "Ho eseguito una strategia di consolidamento dell'infrastruttura che ha ridotto i costi operativi cloud mensili di ~70%." },
+        { bold: "Modernizzazione della Sicurezza", text: "Ho ri-architettato il livello di autenticazione, sostituendo soluzioni NGINX personalizzate con AWS API Gateway gestito." }
       ]
     },
     {
@@ -104,28 +126,28 @@ export const cv_it = {
       location: "Europa",
       period: "2012 - 2019",
       points: [
-        { bold: "Deloitte UK (2018-2019)", text: "Lead DevOps Engineer per la trasformazione digitale dell'Autorità Fiscale Danese." },
-        { bold: "Element (2017-2018)", text: "Founding DevOps Engineer per startup InsureTech." },
-        { bold: "HMRC (2016-2017)", text: "Senior DevOps Consultant per piattaforma multi-active (AWS/On-Prem)." },
-        { bold: "KPMG UK (2015-2016)", text: "Architettato fondazione AWS multi-tenant per Big Data." },
-        { bold: "WTG (2015)", text: "Consegnato infrastruttura di monitoraggio automatizzato sicuro per UK Home Office." },
-        { bold: "Gov.UK (2014-2015)", text: "WebOps Engineer per gateway di identità digitale Gov.UK Verify." },
+        { bold: "Deloitte UK (2018-2019)", text: "Lead DevOps Engineer per la trasformazione digitale dell'Autorità Fiscale Danese. Ridotto il deployment degli ambienti da settimane a ore." },
+        { bold: "Element (2017-2018)", text: "Founding DevOps Engineer per startup InsureTech. Costruito fondazione greenfield AWS/Kubernetes." },
+        { bold: "HMRC (2016-2017)", text: "Senior DevOps Consultant per la realizzazione di una piattaforma multi-active (AWS/On-Prem) per disponibilità senza downtime." },
+        { bold: "KPMG UK (2015-2016)", text: "Architettato fondazione AWS multi-tenant per l'elaborazione Big Data (Hadoop)." },
+        { bold: "WTG (2015)", text: "Consegnato infrastruttura di monitoraggio automatizzato sicuro per UK Home Office in anticipo sui tempi." },
+        { bold: "Gov.UK (2014-2015)", text: "WebOps Engineer per il gateway di identità digitale Gov.UK Verify." },
         { bold: "DigitasLBi (2012-2014)", text: "Gestito ciclo di vita hardware e VMware vSphere Private Cloud." }
       ]
     }
   ],
   skills: {
     "Leadership & Strategia": [
-      "Engineering Strategy", "Team Scaling (3-50+)", "Executive Stakeholder Management", "FinOps", "Tech Recruitment", "Remote Leadership", "Vendor Strategy"
+      "Engineering Strategy", "Team Building & Scaling", "Tech Recruitment", "Performance Management", "Org Design", "Executive Stakeholder Management", "FinOps", "Vendor Strategy"
     ],
     "Cloud & Piattaforma": [
-      "GCP (Pro Architect)", "AWS", "Azure", "Kubernetes (EKS/GKE)", "Internal Developer Platforms (IDP)", "Crossplane", "Terraform", "ArgoCD", "Flux", "Istio"
+      "GCP (Pro Architect)", "AWS", "Azure", "Kubernetes (EKS/GKE)", "Internal Developer Platforms (IDP)", "Crossplane", "Terraform", "ArgoCD", "Flux", "Helm", "Istio"
     ],
     "Architettura & Sviluppo": [
-      "Event-Driven Architecture", "Domain-Driven Design (DDD)", "Microservices", "Go", "Python", "Java Spring Boot", "gRPC/REST", "High-Frequency Systems"
+      "Go", "Python", "Java Spring Boot", "Event-Driven Architecture", "Domain-Driven Design (DDD)", "Microservices", "gRPC/REST", "Distributed Systems"
     ],
     "Ops, Sicurezza & Dati": [
-      "DevSecOps", "Zero Trust", "ISO 27001/NIST", "Observability (Prometheus/Grafana/Datadog)", "AI/ML Infrastructure Readiness"
+      "SRE", "DevSecOps", "Zero Trust", "IAM & Identity Governance", "SOX / ISO 27001 / NIST", "Data Pipelines (ETL/Medallion)", "Dagster", "PostgreSQL", "Observability (Prometheus/Grafana/Datadog)"
     ]
   },
   education: [

@@ -1,5 +1,6 @@
 import { Section } from './Section';
 import { Briefcase, GraduationCap, Award, Cpu, Globe, ArrowUpRight, Languages } from 'lucide-react';
+import { companyUrls } from '../data/companies';
 
 export function Content({ data, labels }) {
   // Fallback labels to prevent crash if undefined
@@ -45,7 +46,28 @@ export function Content({ data, labels }) {
               </div>
               <div className="flex items-center gap-2 text-slate-500 mb-4 font-medium text-sm">
                 <Briefcase size={16} />
-                <span>{job.company}</span>
+                <span>
+                  {job.company.split(' / ').map((name, i, arr) => {
+                    const url = companyUrls[name.trim()];
+                    return (
+                      <span key={i}>
+                        {url ? (
+                          <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-blue-600 hover:underline transition-colors"
+                          >
+                            {name}
+                          </a>
+                        ) : (
+                          name
+                        )}
+                        {i < arr.length - 1 ? ' / ' : ''}
+                      </span>
+                    );
+                  })}
+                </span>
                 <span className="mx-1">•</span>
                 <Globe size={16} />
                 <span>{job.location}</span>
