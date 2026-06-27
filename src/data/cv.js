@@ -150,7 +150,7 @@ export const cv_en = {
       title: "Senior DevOps Engineer / Consultant",
       company: "Previous Engagements",
       location: "Europe",
-      period: "2012 - 2019",
+      period: "2010 - 2019",
       points: [
         { bold: "Deloitte UK (2018-2019)", text: "Lead DevOps Engineer for Danish Tax Authority digital transformation. Reduced environment deployment from weeks to hours." },
         { bold: "Element (2017-2018)", text: "Founding DevOps Engineer for InsureTech startup. Built greenfield AWS/Kubernetes foundation." },
@@ -158,7 +158,8 @@ export const cv_en = {
         { bold: "KPMG UK (2015-2016)", text: "Architected multi-tenant AWS foundation for Big Data (Hadoop) processing." },
         { bold: "WTG (2015)", text: "Delivered secure automated monitoring infrastructure for UK Home Office ahead of schedule." },
         { bold: "Gov.UK (2014-2015)", text: "WebOps Engineer for Gov.UK Verify digital identity gateway." },
-        { bold: "DigitasLBi (2012-2014)", text: "Managed hardware lifecycle and VMware vSphere Private Cloud." }
+        { bold: "DigitasLBi (2012-2014)", text: "Managed hardware lifecycle and VMware vSphere Private Cloud." },
+        { bold: "Google (2010-2011)", text: "Corporate Operations Engineer intern on Google's internal IT helpdesk (London, then Dublin); earned multiple peer bonuses and Google's Python Readability certification." }
       ]
     }
   ],
